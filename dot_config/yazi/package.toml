@@ -1,0 +1,26 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+
+[[plugin.deps]]
+use = "KKV9/compress"
+
+[[plugin.deps]]
+use = "Rolv-Apneseth/starship"
+
+[[plugin.deps]]
+use = "h-hg/yamb"
+
+[[plugin.deps]]
+use = "llanosrocas/yaziline"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:full-border"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-latte"
+
+[[flavor.deps]]
+use = "yazi-rs/flavors:catppuccin-frappe"
