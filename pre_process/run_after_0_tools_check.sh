@@ -22,7 +22,7 @@ echo "$tools" | while IFS=' ' read -r name description; do
     # Remove parentheses from description
     description=$(echo "$description" | sed 's/[()]//g')
 
-    if command -v "$name" >/dev/null 2>&1; then
+    if command -v "$name" >/dev/null 2>/dev/null; then
         echo "✅ $name ($description) is installed"
     else
         echo "❌ $name ($description) is not installed"
@@ -34,7 +34,7 @@ echo "Install By Homebrew"
 echo "----------------------------------------"
 
 echo "$tools" | while IFS=' ' read -r name _; do
-    if ! command -v "$name" >/dev/null 2>&1; then
+    if ! command -v "$name" >/dev/null 2>/dev/null; then
         echo "brew install $name"
     fi
 done
