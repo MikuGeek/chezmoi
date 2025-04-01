@@ -23,6 +23,8 @@ if status is-interactive
     alias lg0="lazygit"
     alias ld0="lazydocker"
     alias pp0="prettyping"
+    alias ze0="zellij"
+    alias cm0="chezmoi"
 
     alias e="eza -alh"
     alias e0a="eza -a"
