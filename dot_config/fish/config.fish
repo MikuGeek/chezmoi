@@ -20,13 +20,13 @@ if status is-interactive
     starship init fish | source
     # Common Aliases
     alias n="nvim"
-    alias lg="lazygit"
-    alias code="cursor"
-    alias prettyping="pp"
+    alias lg0="lazygit"
+    alias ld0="lazydocker"
+    alias pp0="prettyping"
 
-    alias l="eza -alh"
-    alias la="eza -a"
-    alias lt="eza -T"
+    alias e="eza -alh"
+    alias e0a="eza -a"
+    alias e0t="eza -T"
     # Tailscale Integration
     alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
 end
