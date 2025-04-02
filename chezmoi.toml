@@ -1,0 +1,7 @@
+# This is the template for chemoi machine-specific config.
+[data]
+git_credential_helper = ""
+# Options:
+#   macOS(Key Chain): osxkeychain
+#   Windows(GCM): manager
+#   WSL(Use Windows): /mnt/c/users/miku/scoop/apps/git/current/mingw64/bin/git-credential-manager.exe
