@@ -2,6 +2,7 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     # Default Editor
     set -x EDITOR nvim
+    set -x VISUAL nvim
     # fzf Customization
     set -Ux FZF_DEFAULT_OPTS "\
       --color=bg+:#414559,bg:#303446,spinner:#f2d5cf,hl:#e78284 \
