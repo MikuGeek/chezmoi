@@ -1,5 +1,0 @@
-{{ if eq .chezmoi.os "linux" }}
-if [[ -n "$SSH_TTY" && -x "$(command -v fish)" && "$SHELL" != "$(command -v fish)" && -z "$FISH_VERSION" ]]; then
-exec fish
-fi
-{{ end }}
