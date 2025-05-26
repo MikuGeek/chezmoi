@@ -193,6 +193,8 @@ keymap = [
 	# Help
 	{ on = "~",    run = "help", desc = "Open help" },
 	# { on = "<F1>", run = "help", desc = "Open help" },
+	# Ouch Compress
+	{ on = ["c", "o"], run = "plugin ouch", desc = "Compress with ouch" },
 ]
 
 [tasks]
