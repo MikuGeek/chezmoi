@@ -1,6 +1,7 @@
 #!/bin/sh
 
 tools="fish (modern shell)
+gh (github cli)
 eza (modern ls)
 fzf (fuzzy finder)
 zoxide (directory jumper)
@@ -12,11 +13,8 @@ yazi (file manager)
 httpie (better curl)
 starship (commandline prompt)
 lazydocker (docker UI)
-lazygit (git UI)"
-
-echo "----------------------------------------"
-echo "Checking modern CLI tool alternatives"
-echo "----------------------------------------"
+lazygit (git UI)
+zellij (terminal multiplexer)"
 
 echo "$tools" | while IFS=' ' read -r name description; do
     # Remove parentheses from description
@@ -26,15 +24,5 @@ echo "$tools" | while IFS=' ' read -r name description; do
         echo "✅ $name ($description) is installed"
     else
         echo "❌ $name ($description) is not installed"
-    fi
-done
-
-echo "----------------------------------------"
-echo "Install By Homebrew"
-echo "----------------------------------------"
-
-echo "$tools" | while IFS=' ' read -r name _; do
-    if ! command -v "$name" >/dev/null 2>/dev/null; then
-        echo "brew install $name"
     fi
 done
