@@ -1,3 +1,3 @@
-if [[ -n "$SSH_TTY" && -x "$(command -v fish)" && "$SHELL" != "$(command -v fish)" && -z "$FISH_VERSION" ]]; then
-exec fish
+if [[ -o interactive && -x "$(command -v fish)" && "$SHELL" != "$(command -v fish)" && -z "$FISH_VERSION" ]]; then
+  exec fish
 fi
