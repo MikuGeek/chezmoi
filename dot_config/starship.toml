@@ -150,12 +150,12 @@ disabled = true
 
 [character]
 disabled = false
-success_symbol = "[<I>](bold green)"
-error_symbol = "[<I>](bold red)"
-vimcmd_symbol = "[<N>](bold blue)"
-vimcmd_replace_one_symbol = "[<R>](bold yellow)"
-vimcmd_replace_symbol = "[<R>](bold yellow)"
-vimcmd_visual_symbol = "[<V>](bold purple)"
+success_symbol = "[I](bold green)"
+error_symbol = "[I](bold red)"
+vimcmd_symbol = "[N](bold blue)"
+vimcmd_replace_one_symbol = "[R](bold yellow)"
+vimcmd_replace_symbol = "[R](bold yellow)"
+vimcmd_visual_symbol = "[V](bold purple)"
 
 [cmd_duration]
 show_milliseconds = true
