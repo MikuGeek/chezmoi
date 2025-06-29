@@ -12,10 +12,11 @@ btop (system monitor)
 bat (better cat)
 prettyping (better ping)
 yazi (file manager)
-httpie (better curl)
+hurl (HTTP client)
 starship (commandline prompt)
 lazydocker (docker UI)
 lazygit (git UI)
+autin (terminal history)
 zellij (terminal multiplexer)"
 
 echo "$tools" | while IFS=' ' read -r name description; do
