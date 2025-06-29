@@ -6,31 +6,30 @@ set -gx PNPM_HOME "$HOME/local/share/pnpm"
 {{ end }}
 
 if status is-interactive
-    # Commands to run in interactive sessions can go here
-    # Default Editor
-    set -x EDITOR nvim
-    set -x VISUAL nvim
-    # fzf Customization
-    set -Ux FZF_DEFAULT_COMMAND "fd --exclude=/
-      {.git,.idea,.vscode,.sass-cache,node_modules,build,.DS_Store} --type f"
-    # fzf Integration, set the keybindings.
-    fzf --fish | source
-    # atuin integration
-    atuin init fish | source
-    # zoxide Integration
-    zoxide init fish | source
-    # Startship Integration
-    starship init fish | source
-    # Common Aliases
-    alias n="nvim"
-    alias lg0="lazygit"
-    alias ld0="lazydocker"
-    alias pp0="prettyping"
-    alias ze0="zellij"
-    alias cm0="chezmoi"
+  # Commands to run in interactive sessions can go here
+  # Default Editor
+  set -x EDITOR nvim
+  set -x VISUAL nvim
+  # fzf Customization
+  set -Ux FZF_DEFAULT_COMMAND "fd --exclude=/
+    {.git,.idea,.vscode,.sass-cache,node_modules,build,.DS_Store} --type f"
+  # fzf Integration, set the keybindings.
+  fzf --fish | source
+  # atuin integration
+  atuin init fish | source
+  # zoxide Integration
+  zoxide init fish | source
+  # Startship Integration
+  starship init fish | source
+  # Common Aliases
+  alias n="nvim"
+  alias lg0="lazygit"
+  alias ld0="lazydocker"
+  alias pp0="prettyping"
+  alias ze0="zellij"
+  alias cm0="chezmoi"
 
-    alias e="eza -alh"
-    alias e0a="eza -a"
-    alias e0t="eza -T"
+  alias e="eza -alh"
+  alias e0a="eza -a"
+  alias e0t="eza -T"
 end
-

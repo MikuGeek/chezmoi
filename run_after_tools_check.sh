@@ -20,12 +20,12 @@ autin (terminal history)
 zellij (terminal multiplexer)"
 
 echo "$tools" | while IFS=' ' read -r name description; do
-    # Remove parentheses from description
-    description=$(echo "$description" | sed 's/[()]//g')
+  # Remove parentheses from description
+  description=$(echo "$description" | sed 's/[()]//g')
 
-    if command -v "$name" >/dev/null 2>/dev/null; then
-        echo "✅ $name ($description) is installed"
-    else
-        echo "❌ $name ($description) is not installed"
-    fi
+  if command -v "$name" > /dev/null 2> /dev/null; then
+    echo "✅ $name ($description) is installed"
+  else
+    echo "❌ $name ($description) is not installed"
+  fi
 done

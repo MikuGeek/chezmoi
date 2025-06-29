@@ -3,4 +3,3 @@
 ## Todo
 
 - [ ] manage external files by chezmoi (theme config)
-

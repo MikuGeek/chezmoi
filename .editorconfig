@@ -1,0 +1,21 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+indent_style = space
+insert_final_newline = true
+
+[*.{json,yaml,toml}]
+indent_size = 2
+
+[*.md]
+indent_size = 2
+
+[*.{fish,sh,fish.tmpl}]
+indent_size = 2
