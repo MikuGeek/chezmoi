@@ -15,6 +15,8 @@ if status is-interactive
       {.git,.idea,.vscode,.sass-cache,node_modules,build,.DS_Store} --type f"
     # fzf Integration, set the keybindings.
     fzf --fish | source
+    # atuin integration
+    atuin init fish | source
     # zoxide Integration
     zoxide init fish | source
     # Startship Integration
