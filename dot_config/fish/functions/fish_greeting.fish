@@ -1,4 +1,5 @@
-function fish_greeting set_color green
+function fish_greeting
+  set_color green
   echo "██╗   ██╗ ██████╗ ██╗      ██████╗ ██╗"
   echo "╚██╗ ██╔╝██╔═══██╗██║     ██╔═══██╗██║"
   echo " ╚████╔╝ ██║   ██║██║     ██║   ██║██║"
