@@ -1,8 +1,5 @@
-# Path
 {{ if eq .chezmoi.os "darwin" }}
-set -gx PNPM_HOME "$HOME/Library/pnpm"
 {{ else if eq .chezmoi.os "linux" }}
-set -gx PNPM_HOME "$HOME/local/share/pnpm"
 {{ end }}
 
 if status is-interactive
