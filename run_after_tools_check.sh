@@ -1,31 +1,46 @@
-#!/bin/sh
+#!/bin/bash
 
+# 要检查的工具列表
 tools="fish (modern shell)
-gh (github cli)
 eza (modern ls)
 fzf (fuzzy finder)
 fd (find)
-rg (grep)
+ripgrep (grep)
+bat (better cat and less)
 zoxide (directory jumper)
+atuin (terminal history)
 dust (disk usage)
 btop (system monitor)
-bat (better cat)
-prettyping (better ping)
 yazi (file manager)
 hurl (HTTP client)
 starship (commandline prompt)
+gh (github cli)
 lazydocker (docker UI)
 lazygit (git UI)
-autin (terminal history)
-zellij (terminal multiplexer)"
+zellij (terminal multiplexer)
+gcc (C compiler)
+node (JavaScript runtime)
+python3 (Python interpreter)
+"
 
-echo "$tools" | while IFS=' ' read -r name description; do
-  # Remove parentheses from description
-  description=$(echo "$description" | sed 's/[()]//g')
+# 初始化变量
+installed_list=""
+not_installed_list=""
 
-  if command -v "$name" > /dev/null 2> /dev/null; then
-    echo "✅ $name ($description) is installed"
+# 使用 Here String 将变量内容重定向为循环的输入
+# 这不会为 while 循环创建子 Shell
+while read -r line; do
+  name=$(echo "$line" | awk '{print $1}')
+  if command -v "$name" >/dev/null 2>&1; then
+    installed_list="$installed_list$name "
   else
-    echo "❌ $name ($description) is not installed"
+    not_installed_list="$not_installed_list$name "
   fi
-done
+done <<<"$tools"
+
+# 在主 Shell 中打印结果，变量值已被保留
+echo "✔️Installed:"
+echo "${installed_list% }"
+
+echo "❌Not installed:"
+echo "${not_installed_list% }"
