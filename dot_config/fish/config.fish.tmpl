@@ -12,6 +12,7 @@ if status is-interactive
   set -Ux FZF_DEFAULT_COMMAND "fd --exclude=/
     {.git,.idea,.vscode,.sass-cache,node_modules,build,.DS_Store} --type f"
   # fzf Integration, set the keybindings.
+  catppuccin-fzf-mocha-set
   fzf --fish | source
   # atuin integration
   atuin init fish | source

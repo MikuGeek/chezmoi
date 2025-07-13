@@ -17,7 +17,7 @@ use = "yazi-rs/plugins:full-border"
 use = "yazi-rs/plugins:git"
 
 [[flavor.deps]]
-use = "yazi-rs/flavors:catppuccin-frappe"
+use = "yazi-rs/flavors:catppuccin-mocha"
 
 [[flavor.deps]]
 use = "ndtoan96/ouch"

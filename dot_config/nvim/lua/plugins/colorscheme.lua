@@ -8,7 +8,7 @@ return {
       transparent_background = true,
       background = { -- :h background
         light = "latte",
-        dark = "frappe",
+        dark = "mocha",
       },
     },
   },
